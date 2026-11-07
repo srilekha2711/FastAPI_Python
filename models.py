@@ -6,6 +6,7 @@ class User(SQLModel, table=True):
     name:str
     phone:int
     email:str
+    file_path:str
 class CreateUser(SQLModel):
     name:str
     phone:int
