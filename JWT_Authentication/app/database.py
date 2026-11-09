@@ -2,7 +2,7 @@
 from sqlmodel import SQLModel, create_engine, Session
 
 
-DATABASE_URL = "sqlite:///./users.db"
+DATABASE_URL = "postgresql+psycopg2://fastapi_login_user:root@localhost:5432/jwt_auth_db"
 engine = create_engine(DATABASE_URL, echo=True)
 
 def create_tables_database():
